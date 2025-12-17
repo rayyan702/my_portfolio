@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rayyan Rashid — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <svg class="logo" viewBox="0 0 100 30" preserveAspectRatio="xMinYMid" aria-hidden="true">
+        <path d="M2 20 L18 6 L30 6 L45 20 L70 20 L90 6" fill="none" stroke="#ff1333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+      <h1 id="mainName">Rayyan Rashid</h1>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="skills.html" class="nav-link">Skills</a>
+      <a href="certificates.html" class="nav-link">Certificates</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button id="themeToggle" aria-pressed="false" title="Toggle theme">🌗</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-inner">
+        <h2 id="subtitle">Welcome to my portfolio</h2>
+        <h1 class="hero-name">Rayyan Rashid</h1>
+        <p class="about-intro">Hello — I'm <strong>Rayyan Rashid</strong>. Welcome to my portfolio.</p>
+        <a class="cta" href="contact.html">Get in touch</a>
+      </div>
+      <div class="car-silhouette" aria-hidden="true">
+        <svg viewBox="0 0 800 200">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0" stop-color="#330000" stop-opacity="0" />
+              <stop offset="1" stop-color="#ff1333" stop-opacity="0.25" />
+            </linearGradient>
+          </defs>
+          <path d="M20 120 C120 30, 240 30, 360 80 C540 160, 640 140, 780 110" fill="none" stroke="url(#g1)" stroke-width="6" stroke-linecap="round"></path>
+        </svg>
+      </div>
+    </section>
+
+    <section class="teaser about-teaser">
+      <div class="about-teaser-inner">
+        <h3>About Me</h3>
+        <p>I'm an engineering student interested in software, automotive design and photography. <a href="about.html">Read more</a></p>
+      </div>
+    </section>
+
+    <section id="skills" class="page skills-section">
+      <h2>Technical Skills</h2>
+      <p>Quick overview of technologies and competencies.</p>
+
+      <ul class="skills-list">
+        <li>
+          <div class="skill-meta">
+            <strong>HTML / CSS</strong>
+            <span>90%</span>
+          </div>
+          <div class="bar"><span style="width:90%"></span></div>
+        </li>
+        <li>
+          <div class="skill-meta">
+            <strong>JavaScript</strong>
+            <span>85%</span>
+          </div>
+          <div class="bar"><span style="width:85%"></span></div>
+        </li>
+        <li>
+          <div class="skill-meta">
+            <strong>React / Frontend</strong>
+            <span>80%</span>
+          </div>
+          <div class="bar"><span style="width:80%"></span></div>
+        </li>
+        <li>
+          <div class="skill-meta">
+            <strong>Node / Backend</strong>
+            <span>70%</span>
+          </div>
+          <div class="bar"><span style="width:70%"></span></div>
+        </li>
+        <li>
+          <div class="skill-meta">
+            <strong>Photography</strong>
+            <span>75%</span>
+          </div>
+          <div class="bar"><span style="width:75%"></span></div>
+        </li>
+      </ul>
+
+    </section>
+
+    <section id="certificates" class="page certs">
+      <h2>Certifications</h2>
+      <p>Below are your certifications. Replace placeholders with your scans or PDFs.</p>
+
+      <div class="cert-grid">
+        <figure class="cert">
+          <div class="cert-thumb">PDF</div>
+          <figcaption>
+            <h4>MATLAB Certificate</h4>
+            <a class="btn" href="#">Download</a>
+          </figcaption>
+        </figure>
+
+        <figure class="cert">
+          <div class="cert-thumb">PDF</div>
+          <figcaption>
+            <h4>MATLAB Certificate</h4>
+            <a class="btn" href="#">Download</a>
+          </figcaption>
+        </figure>
+
+        <figure class="cert">
+          <div class="cert-thumb">PDF</div>
+          <figcaption>
+            <h4>MATLAB Certificate</h4>
+            <a class="btn" href="#">Download</a>
+          </figcaption>
+        </figure>
+      </div>
+
+    </section>
+
+    <section id="projects" class="page projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Magnesia — Magnesium Fuel Initiative</h3>
+        <p><strong>Magnesia</strong> is an early-stage venture exploring magnesium-based fuels as an alternative energy carrier for internal combustion engines and hybrid systems. The project investigates how magnesium could function as a low-cost, widely available fuel source with the potential to lower operating costs and reduce emissions compared to conventional petrol. Our work focuses on prototype development, safety testing, and lifecycle analysis: the goal is to develop solutions that are more affordable and produce fewer harmful emissions, while acknowledging that extensive testing and regulatory review are required before real-world deployment.</p>
+        <a class="btn" href="#">Learn more</a>
+      </div>
+    </section>
+
+    <section id="gallery" class="page gallery">
+      <h2>Photographs</h2>
+      <p>Click any image to view it larger.</p>
+
+      <div class="gallery-grid">
+        <button class="thumb" data-src="assets/photo1.jpg"><img src="assets/photo1.jpg" alt="Photo 1" loading="lazy"/></button>
+        <button class="thumb" data-src="https://via.placeholder.com/800x500?text=Photo+2">Photo 2</button>
+        <button class="thumb" data-src="https://via.placeholder.com/800x500?text=Photo+3">Photo 3</button>
+        <button class="thumb" data-src="https://via.placeholder.com/800x500?text=Photo+4">Photo 4</button>
+        <button class="thumb" data-src="https://via.placeholder.com/800x500?text=Photo+5">Photo 5</button>
+        <button class="thumb" data-src="https://via.placeholder.com/800x500?text=Photo+6">Photo 6</button>
+        <button class="thumb" data-src="https://via.placeholder.com/800x500?text=Photo+7">Photo 7</button>
+        <button class="thumb" data-src="https://via.placeholder.com/800x500?text=Photo+8">Photo 8</button>
+      </div>
+
+      <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button id="lbClose" class="lb-close" aria-label="Close">✕</button>
+        <img id="lbImage" src="" alt="" />
+      </div>
+
+    </section>
+
+    <section id="contact" class="page contact">
+      <h2>Contact Me</h2>
+
+      <form id="contactForm" class="contact-form" novalidate data-email="rayyanrashid702@gmail.com">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          <span>Subject</span>
+          <input type="text" name="subject" />
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send Message</button>
+          <div id="formMsg" class="form-msg" aria-live="polite"></div>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="year"></span> Rayyan Rashid</div>
+    <div class="socials">
+      <a href="#">Twitter</a>
+      <a href="#">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
